@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        // var arr = [
+        //     [1,2,3],
+        //     [4,5,6],
+        //     [7,8,9]
+        // ]
+     
+
+        // for (var i = 0; i < arr.length; i++) {
+        //     var sum = 0
+        //     for (var j = 0; j < arr[i].length ; j++) {
+        //         sum+= arr[i][j]  
+                
+
+        // }
+        // console.log("sum of row", i+1 ,"is", sum )
+        // }
+
+
+
+
+        // var arr = [
+        //     [1,2,3],
+        //     [4,5,6],
+        //     [7,8,9]
+        // ]
+     
+
+        // for (var i = 0; i < arr.length; i++) {
+        //     var sum = 0
+        //     for (var j = 0; j < arr[i].length ; j++) {
+        //         sum+= arr[j][i]  
+                
+
+        // }
+        // console.log("sum of column", i+1 ,"is", sum )
+        // }
+
+        var arr = [
+            [1,2,3],
+            [20,15,6],
+            [7,8,9]
+        ]
+     
+
+        var max = 0
+        var count = 0
+     
+
+        for (var i = 0; i < arr.length; i++) {
+            var sum = 0
+            for (var j = 0; j < arr[i].length ; j++) {
+                sum += arr[i][j]  
+
+            }
+
+
+            if (sum > max) {
+                max = sum
+            
+        }
+       
+
+
+    }
+    console.log(max)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
