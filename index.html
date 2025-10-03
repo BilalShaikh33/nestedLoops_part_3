@@ -114,19 +114,19 @@
 
 
         // for (var i = 0; i < arr.length; i++) {
+        //     for (let j = 0; j < arr[i].length; j++) {
+        //         if (i === 0 ) {
+        //             var firstrow = arr[i][j]
+        //             arr[i][j] = arr[arr.length-1][j]
+        //              arr[arr.length-1][j] = firstrow
 
-        //     var firstrow = arr[0][i]
-        //     arr[0][i] = arr[arr.length-1][i]
-        //     arr[arr.length-1][i] = firstrow
-
-
+        //         }
+        //     }
         // }
 
         // console.log(arr);
 
-
-
-
+        
 
         var arr = [
             [1, 2, 3],
@@ -136,15 +136,21 @@
 
 
         for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                if (j === 0 ) {
+                    var firstcol = arr[i][j]
+                    arr[i][j] = arr[i][arr.length-1]
+                    arr[i][arr.length-1] = firstcol
 
-            var firstcol = arr[i][0]
-            arr[i][0] = arr[i][arr[i].length - 1]
-            arr[i][arr[i].length - 1] = firstcol
-
-
+                }
+            }
         }
 
-        console.log(arr)
+        console.log(arr);
+
+
+
+
 
 
 
