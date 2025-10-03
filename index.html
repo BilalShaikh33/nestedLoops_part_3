@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
 
@@ -15,13 +17,13 @@
         //     [4,5,6],
         //     [7,8,9]
         // ]
-     
+
 
         // for (var i = 0; i < arr.length; i++) {
         //     var sum = 0
         //     for (var j = 0; j < arr[i].length ; j++) {
         //         sum+= arr[i][j]  
-                
+
 
         // }
         // console.log("sum of row", i+1 ,"is", sum )
@@ -35,76 +37,108 @@
         //     [4,5,6],
         //     [7,8,9]
         // ]
-     
+
 
         // for (var i = 0; i < arr.length; i++) {
         //     var sum = 0
         //     for (var j = 0; j < arr[i].length ; j++) {
         //         sum+= arr[j][i]  
-                
+
 
         // }
         // console.log("sum of column", i+1 ,"is", sum )
         // }
 
-    //     var arr = [
-    //         [1,2,3],
-    //         [20,15,6],
-    //         [7,8,9]
-    //     ]
-     
-
-    //     var max = 0
-    //     var count = 0
-     
-
-    //     for (var i = 0; i < arr.length; i++) {
-    //         var sum = 0
-    //         for (var j = 0; j < arr[i].length ; j++) {
-    //             sum += arr[i][j]  
-
-    //         }
+        //     var arr = [
+        //         [1,2,3],
+        //         [20,15,6],
+        //         [7,8,9]
+        //     ]
 
 
-    //         if (sum > max) {
-    //             max = sum
-            
-    //     }
-       
-    // }
-    // console.log(max)
+        //     var max = 0
+        //     var count = 0
 
 
-            var arr = [
-            [1,2,3],
-            [20,15,6],
-            [7,8,9]
+        //     for (var i = 0; i < arr.length; i++) {
+        //         var sum = 0
+        //         for (var j = 0; j < arr[i].length ; j++) {
+        //             sum += arr[i][j]  
+
+        //         }
+
+
+        //         if (sum > max) {
+        //             max = sum
+
+        //     }
+
+        // }
+        // console.log(max)
+
+
+        //         var arr = [
+        //         [1,2,3],
+        //         [20,15,6],
+        //         [7,8,9]
+        //     ]
+
+
+        //     var min = 9999
+        //     var count = 0
+
+
+        //     for (var i = 0; i < arr.length; i++) {
+        //         var sum = 0
+        //         for (var j = 0; j < arr[i].length ; j++) {
+        //             sum += arr[i][j]  
+
+        //         }
+
+
+        //         if (sum < min) {
+        //             min = sum
+
+        //     }
+
+        // }
+        // console.log(min)
+
+
+
+        var arr = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
         ]
-     
-
-        var min = 9999
-        var count = 0
-     
-
-        for (var i = 0; i < arr.length; i++) {
-            var sum = 0
-            for (var j = 0; j < arr[i].length ; j++) {
-                sum += arr[i][j]  
-
-            }
 
 
-            if (sum < min) {
-                min = sum
-            
+        for (var i = 0; i < arr[0].length; i++) {
+
+            var firstrow = arr[0][i]
+            arr[0][i] = arr[arr.length-1][i]
+            arr[arr.length-1][i] = firstrow
+
+
         }
-       
-    }
-    console.log(min)
+
+        console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     </script>
-    
+
 </body>
+
 </html>
